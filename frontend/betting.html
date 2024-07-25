@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afri-Betting</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .header-bg {
+      background: linear-gradient(to right, #002244, #003366);
+    }
+    .hero-bg {
+      background: url('https://example.com/hero-image.jpg') no-repeat center center;
+      background-size: cover;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="header-bg text-white py-4 px-6 md:px-10">
+    <div class="container mx-auto flex items-center justify-between">
+      <a class="text-2xl font-bold flex items-center" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-8 w-8">
+          <path d="M17.28 9.05a5.5 5.5 0 1 0-10.56 0A5.5 5.5 0 1 0 12 17.66a5.5 5.5 0 1 0 5.28-8.6Z"></path>
+          <path d="M12 17.66L12 22"></path>
+        </svg>
+        Afri-Betting
+      </a>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a class="hover:text-[#ffd700]" href="#">Home</a>
+        <a class="hover:text-[#ffd700]" href="#">Sports</a>
+        <a class="hover:text-[#ffd700]" href="#">Live Betting</a>
+        <a class="hover:text-[#ffd700]" href="#">Casino</a>
+        <a class="hover:text-[#ffd700]" href="#">Promotions</a>
+        <a class="hover:text-[#ffd700]" href="signup.html">Sign Up</a>
+        <a class="hover:text-[#ffd700]" href="#">Login</a>
+      </nav>
+      <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="flex-1 bg-white">
+    <!-- Hero Section -->
+    <section class="hero-bg overlay py-24 text-center text-white">
+      <div class="container mx-auto">
+        <h1 class="text-5xl font-bold mb-6">Welcome to Afri-Betting</h1>
+        <p class="text-lg mb-8">Your premier destination for sports betting and casino gaming. Enjoy a wide range of markets, live in-play betting, and exciting promotions.</p>
+        <a href="signup.html" class="bg-[#ffd700] text-[#002244] font-bold py-3 px-6 rounded-md">Join Now</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-10 px-6 md:px-10">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Sports Betting</h2>
+            <p class="mb-4">Bet on your favorite sports, including football, basketball, tennis, and more. Our platform offers competitive odds and a user-friendly interface.</p>
+            <a class="text-[#002244] font-bold" href="#">Explore Sports Betting</a>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Live Betting</h2>
+            <p class="mb-4">Experience the thrill of live betting with our real-time updates and in-play markets. Follow the action and place bets as the game unfolds.</p>
+            <a class="text-[#002244] font-bold" href="#">Explore Live Betting</a>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Casino</h2>
+            <p class="mb-4">Enjoy a wide selection of casino games, including slots, table games, and live dealer experiences. Experience the thrill of the casino from the comfort of your home.</p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-gray-100 p-4 rounded-lg text-center">
+                <img src="https://AT_solutions/frontend/blackjack.jpg" alt="Blackjack" class="rounded-lg mb-2 mx-auto" style="aspect-ratio: 200 / 150; object-fit: cover;">
+                <h3 class="text-lg font-bold mb-2">Blackjack</h3>
+                <p class="text-gray-700 text-sm">Experience the classic casino game with our live dealer tables.</p>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg text-center">
+                <img src="https://example.com/roulette.jpg" alt="Roulette" class="rounded-lg mb-2 mx-auto" style="aspect-ratio: 200 / 150; object-fit: cover;">
+                <h3 class="text-lg font-bold mb-2">Roulette</h3>
+                <p class="text-gray-700 text-sm">Spin the wheel and try your luck with our exciting roulette tables.</p>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg text-center">
+                <img src="https://example.com/slots.jpg" alt="Slots" class="rounded-lg mb-2 mx-auto" style="aspect-ratio: 200 / 150; object-fit: cover;">
+                <h3 class="text-lg font-bold mb-2">Slots</h3>
+                <p class="text-gray-700 text-sm">Spin the reels and try your luck with our wide selection of slot games.</p>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg text-center">
+                <img src="https://example.com/baccarat.jpg" alt="Baccarat" class="rounded-lg mb-2 mx-auto" style="aspect-ratio: 200 / 150; object-fit: cover;">
+                <h3 class="text-lg font-bold mb-2">Baccarat</h3>
+                <p class="text-gray-700 text-sm">Experience the elegance of baccarat with our live dealer tables.</p>
+              </div>
+            </div>
+            <a class="text-[#002244] font-bold mt-4 block" href="#">Explore Casino</a>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Promotions</h2>
+            <p class="mb-4">Take advantage of our exciting promotions and bonuses to enhance your betting experience. From welcome offers to ongoing rewards, we've got you covered.</p>
+            <a class="text-[#002244] font-bold" href="#">Explore Promotions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-10 px-6 md:px-10 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-6 text-center">Customer Reviews</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <img src="https://example.com/avatar1.jpg" alt="Customer Avatar" class="rounded-full mr-4" style="width: 40px; height: 40px; object-fit: cover;">
+              <div>
+                <h3 class="font-bold">John Doe</h3>
+                <p class="text-sm text-gray-600">Verified Customer</p>
+              </div>
+            </div>
+            <p>"Afri-Betting offers an incredible range of betting options and their customer service is top-notch. Highly recommend!"</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <img src="https://example.com/avatar2.jpg" alt="Customer Avatar" class="rounded-full mr-4" style="width: 40px; height: 40px; object-fit: cover;">
+              <div>
+                <h3 class="font-bold">Jane Smith</h3>
+                <p class="text-sm text-gray-600">Verified Customer</p>
+              </div>
+            </div>
+            <p>"The live betting feature is fantastic. I love being able to place bets in real-time while watching the game."</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <img src="https://example.com/avatar3.jpg" alt="Customer Avatar" class="rounded-full mr-4" style="width: 40px; height: 40px; object-fit: cover;">
+              <div>
+                <h3 class="font-bold">Mark Johnson</h3>
+                <p class="text-sm text-gray-600">Verified Customer</p>
+              </div>
+            </div>
+            <p>"Afri-Betting's casino games are fantastic. The live dealer tables provide a really authentic experience."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#001f3f] text-white py-6 px-6 md:px-10">
+    <div class="container mx-auto text-center">
+      <p class="mb-2">&copy; 2024 Afri-Betting. All rights reserved.</p>
+      <div class="flex justify-center space-x-4">
+        <a class="hover:text-[#ffd700]" href="#">Privacy Policy</a>
+        <a class="hover:text-[#ffd700]" href="#">Terms of Service</a>
+        <a class="hover:text-[#ffd700]" href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
