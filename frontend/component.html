@@ -1,167 +1,470 @@
 <!--
 // v0 by Vercel.
-// https://v0.dev/t/hwGBC8vNDwe
+// https://v0.dev/t/yuhp5ZMNJr6
 -->
 
 <div class="flex flex-col min-h-screen">
-  <header class="bg-[#003366] text-white py-4 px-6 flex items-center justify-between">
-    <a class="text-2xl font-bold" href="#">
-      Afri-betting
-    </a>
-    <nav class="flex items-center gap-4">
-      <a class="hover:underline" href="#">
-        Betting
+  <header class="bg-[#002244] text-white py-4 px-6 md:px-10">
+    <div class="container mx-auto flex items-center justify-between">
+      <a class="text-2xl font-bold flex items-center" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="mr-2 h-8 w-8"
+        >
+          <path d="M17.28 9.05a5.5 5.5 0 1 0-10.56 0A5.5 5.5 0 1 0 12 17.66a5.5 5.5 0 1 0 5.28-8.6Z"></path>
+          <path d="M12 17.66L12 22"></path>
+        </svg>
+        Afri-Betting
       </a>
-      <a class="hover:underline" href="#">
-        Profile
-      </a>
-      <a class="hover:underline" href="#">
-        Admin
-      </a>
-      <button class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-9 rounded-md px-3 bg-[#00264d] text-white hover:bg-[#001a33]">
-        Sign In
+      <nav class="hidden md:flex items-center space-x-6">
+        <a class="hover:text-[#ffd700]" href="#">
+          Home
+        </a>
+        <a class="hover:text-[#ffd700]" href="#">
+          Sports
+        </a>
+        <a class="hover:text-[#ffd700]" href="#">
+          Live Betting
+        </a>
+        <a class="hover:text-[#ffd700]" href="#">
+          Casino
+        </a>
+        <a class="hover:text-[#ffd700]" href="#">
+          Promotions
+        </a>
+        <a class="hover:text-[#ffd700]" href="#">
+          Login
+        </a>
+      </nav>
+      <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2 md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+        <span class="sr-only">Toggle navigation</span>
       </button>
-    </nav>
+    </div>
   </header>
-  <main class="flex-1">
-    <section class="bg-[#F3F4F6] py-12 px-6">
-      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-        <div>
-          <h1 class="text-4xl font-bold mb-4 text-[#1F2937]">Welcome to Afri-betting</h1>
-          <p class="text-[#6B7280] mb-8">
-            Afri-betting is your one-stop destination for all your betting needs. Explore a wide range of sports,
-            esports, and other exciting markets, and place your bets with ease.
-          </p>
-          <a class="inline-flex items-center gap-2 text-[#003366] hover:text-[#00264d]" href="#">
-            <span>Start Betting</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="w-5 h-5"
-            >
-              <path d="M5 12h14"></path>
-              <path d="m12 5 7 7-7 7"></path>
-            </svg>
-          </a>
-        </div>
-        <div>
-          <h2 class="text-2xl font-bold mb-4 text-[#1F2937]">Upcoming Events</h2>
-          <ul class="space-y-4">
-            <li>
-              <h3 class="font-semibold text-[#1F2937]">Premier League</h3>
-              <p class="text-[#6B7280]">Manchester United vs. Chelsea - July 25, 2024</p>
-            </li>
-            <li>
-              <h3 class="font-semibold text-[#1F2937]">League of Legends</h3>
-              <p class="text-[#6B7280]">TSM vs. Cloud9 - August 1, 2024</p>
-            </li>
-            <li>
-              <h3 class="font-semibold text-[#1F2937]">NBA Finals</h3>
-              <p class="text-[#6B7280]">Golden State Warriors vs. Boston Celtics - June 1, 2024</p>
-            </li>
-          </ul>
+  <main class="flex-1 bg-white">
+    <section class="py-10 px-6 md:px-10">
+      <div class="container mx-auto">
+        <h1 class="text-3xl font-bold mb-6">Welcome to Afri-Betting</h1>
+        <p class="text-lg mb-8">
+          Afri-Betting is your premier destination for sports betting and casino gaming. Enjoy a wide range of
+          markets, live in-play betting, and exciting promotions.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Sports Betting</h2>
+            <p class="mb-4">
+              Bet on your favorite sports, including football, basketball, tennis, and more. Our platform offers
+              competitive odds and a user-friendly interface.
+            </p>
+            <a class="text-[#002244] font-bold" href="#">
+              Explore Sports Betting
+            </a>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Live Betting</h2>
+            <p class="mb-4">
+              Experience the thrill of live betting with our real-time updates and in-play markets. Follow the
+              action and place bets as the game unfolds.
+            </p>
+            <a class="text-[#002244] font-bold" href="#">
+              Explore Live Betting
+            </a>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Casino</h2>
+            <p class="mb-4">
+              Enjoy a wide selection of casino games, including slots, table games, and live dealer experiences.
+              Experience the thrill of the casino from the comfort of your home.
+            </p>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-gray-100 p-4 rounded-lg">
+                <img
+                  src="/placeholder.svg"
+                  alt="Blackjack"
+                  width="200"
+                  height="150"
+                  class="rounded-lg mb-2"
+                  style="aspect-ratio: 200 / 150; object-fit: cover;"
+                />
+                <h3 class="text-lg font-bold mb-2">Blackjack</h3>
+                <p class="text-gray-700 text-sm">Experience the classic casino game with our live dealer tables.</p>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg">
+                <img
+                  src="/placeholder.svg"
+                  alt="Roulette"
+                  width="200"
+                  height="150"
+                  class="rounded-lg mb-2"
+                  style="aspect-ratio: 200 / 150; object-fit: cover;"
+                />
+                <h3 class="text-lg font-bold mb-2">Roulette</h3>
+                <p class="text-gray-700 text-sm">
+                  Spin the wheel and try your luck with our exciting roulette tables.
+                </p>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg">
+                <img
+                  src="/placeholder.svg"
+                  alt="Slots"
+                  width="200"
+                  height="150"
+                  class="rounded-lg mb-2"
+                  style="aspect-ratio: 200 / 150; object-fit: cover;"
+                />
+                <h3 class="text-lg font-bold mb-2">Slots</h3>
+                <p class="text-gray-700 text-sm">
+                  Spin the reels and try your luck with our wide selection of slot games.
+                </p>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg">
+                <img
+                  src="/placeholder.svg"
+                  alt="Baccarat"
+                  width="200"
+                  height="150"
+                  class="rounded-lg mb-2"
+                  style="aspect-ratio: 200 / 150; object-fit: cover;"
+                />
+                <h3 class="text-lg font-bold mb-2">Baccarat</h3>
+                <p class="text-gray-700 text-sm">
+                  Experience the elegance of baccarat with our live dealer tables.
+                </p>
+              </div>
+            </div>
+            <a class="text-[#002244] font-bold mt-4" href="#">
+              Explore Casino
+            </a>
+          </div>
+          <div>
+            <h2 class="text-2xl font-bold mb-4">Promotions</h2>
+            <p class="mb-4">
+              Take advantage of our exciting promotions and bonuses to enhance your betting experience. From welcome
+              offers to ongoing rewards, we've got you covered.
+            </p>
+            <a class="text-[#002244] font-bold" href="#">
+              Explore Promotions
+            </a>
+          </div>
         </div>
       </div>
     </section>
-    <section class="py-12 px-6">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-2xl font-bold mb-4 text-[#1F2937]">Popular Bets</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div
-            class="border bg-[#F9FAFB] text-[#1F2937] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-            data-v0-t="card"
-          >
-            <div class="flex flex-col space-y-1.5 p-6">
-              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Premier League</h3>
-              <p class="text-sm text-muted-foreground">Manchester United vs. Chelsea</p>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between">
-                <div>Manchester United</div>
-                <div class="font-bold text-[#003366]">2.5</div>
+    <section class="py-10 px-6 md:px-10 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-2xl font-bold mb-6">Customer Reviews</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <img
+                src="/placeholder.svg"
+                alt="Customer Avatar"
+                width="40"
+                height="40"
+                class="rounded-full mr-4"
+                style="aspect-ratio: 40 / 40; object-fit: cover;"
+              />
+              <div>
+                <h3 class="text-lg font-bold">John Doe</h3>
+                <div class="flex items-center text-yellow-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
               </div>
-              <div class="flex items-center justify-between">
-                <div>Draw</div>
-                <div class="font-bold text-[#003366]">3.0</div>
-              </div>
-              <div class="flex items-center justify-between">
-                <div>Chelsea</div>
-                <div class="font-bold text-[#003366]">2.8</div>
-              </div>
             </div>
-            <div class="flex items-center p-6">
-              <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-[#003366] text-white hover:bg-[#00264d] rounded-b-lg">
-                Place Bet
-              </button>
-            </div>
+            <p class="text-gray-700">
+              "I've been using Afri-Betting for a while now and I'm\n impressed with the wide range of sports and
+              markets they\n offer. The live betting feature is especially exciting."
+            </p>
           </div>
-          <div
-            class="border bg-[#F9FAFB] text-[#1F2937] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-            data-v0-t="card"
-          >
-            <div class="flex flex-col space-y-1.5 p-6">
-              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
-                League of Legends
-              </h3>
-              <p class="text-sm text-muted-foreground">TSM vs. Cloud9</p>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between">
-                <div>TSM</div>
-                <div class="font-bold text-[#003366]">1.8</div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <img
+                src="/placeholder.svg"
+                alt="Customer Avatar"
+                width="40"
+                height="40"
+                class="rounded-full mr-4"
+                style="aspect-ratio: 40 / 40; object-fit: cover;"
+              />
+              <div>
+                <h3 class="text-lg font-bold">Jane Smith</h3>
+                <div class="flex items-center text-yellow-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5 text-gray-400"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
               </div>
-              <div class="flex items-center justify-between">
-                <div>Cloud9</div>
-                <div class="font-bold text-[#003366]">2.2</div>
-              </div>
             </div>
-            <div class="flex items-center p-6">
-              <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-[#003366] text-white hover:bg-[#00264d] rounded-b-lg">
-                Place Bet
-              </button>
-            </div>
+            <p class="text-gray-700">
+              "The casino games on Afri-Betting are top-notch. I've tried\n a variety of slots and table games, and
+              the graphics and\n gameplay are really immersive."
+            </p>
           </div>
-          <div
-            class="border bg-[#F9FAFB] text-[#1F2937] rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-            data-v0-t="card"
-          >
-            <div class="flex flex-col space-y-1.5 p-6">
-              <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">NBA Finals</h3>
-              <p class="text-sm text-muted-foreground">Golden State Warriors vs. Boston Celtics</p>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center justify-between">
-                <div>Golden State Warriors</div>
-                <div class="font-bold text-[#003366]">1.9</div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <div class="flex items-center mb-4">
+              <img
+                src="/placeholder.svg"
+                alt="Customer Avatar"
+                width="40"
+                height="40"
+                class="rounded-full mr-4"
+                style="aspect-ratio: 40 / 40; object-fit: cover;"
+              />
+              <div>
+                <h3 class="text-lg font-bold">Michael Johnson</h3>
+                <div class="flex items-center text-yellow-500">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-5 h-5"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
               </div>
-              <div class="flex items-center justify-between">
-                <div>Boston Celtics</div>
-                <div class="font-bold text-[#003366]">2.1</div>
-              </div>
             </div>
-            <div class="flex items-center p-6">
-              <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 w-full bg-[#003366] text-white hover:bg-[#00264d] rounded-b-lg">
-                Place Bet
-              </button>
-            </div>
+            <p class="text-gray-700">
+              "The promotions and bonuses on Afri-Betting are really\n generous. I've been able to boost my winnings
+              thanks to the\n{" "}
+            </p>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="bg-[#F3F4F6] text-[#6B7280] py-6 px-6 flex items-center justify-between">
-    <div>© 2024 Afri-betting. All rights reserved.</div>
-    <nav class="flex items-center gap-4">
-      <a class="hover:underline" href="#">
-        About
-      </a>
-    </nav>
+  <footer class="bg-[#002244] text-white py-6 px-6 md:px-10">
+    <div class="container mx-auto flex items-center justify-between">
+      <p>© 2024 Afri-Betting. All rights reserved.</p>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a class="hover:text-[#ffd700]" href="#">
+          Terms of Service
+        </a>
+        <a class="hover:text-[#ffd700]" href="#">
+          Privacy Policy
+        </a>
+      </nav>
+    </div>
   </footer>
 </div>
